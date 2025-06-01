@@ -1,4 +1,4 @@
-# Atividade-Curso-MauiAppJogoDaVelha
+# Atividade-Curso-AppEventos
 Atividade da Agenda 15 de DSII do Curso técnico de Desenvolvimento De sistemas:  
 Professor responsavel JUSSIMAR NASCIMENTO LEAL  
 
