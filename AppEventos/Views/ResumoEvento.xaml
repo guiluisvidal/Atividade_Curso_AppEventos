@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEventos.Views.ResumoEventoPage"
+             Title="Resumo do Evento"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Frame CornerRadius="20" Padding="20" BackgroundColor="White" HasShadow="True">
+
+                <VerticalStackLayout Spacing="15">
+
+
+                    <Label Text="{Binding Nome}" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"
+                           TextColor="#6C3FCC"/>
+
+                    <Label Text="Data de Início:" FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="{Binding DataInicio, StringFormat='{0:dd/MM/yyyy}'}"
+                   TextColor="Black"/>
+
+            <Label Text="Data de Término:" FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="{Binding DataTermino, StringFormat='{0:dd/MM/yyyy}'}"
+                   TextColor="Black"/>
+
+            <Label Text="Duração (dias):" FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="{Binding DuracaoEmDias}"
+                   TextColor="Black"/>
+
+            <Label Text="Número de Participantes:" FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="{Binding Participantes}"
+                   TextColor="Black"/>
+
+            <Label Text="Local:" FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="{Binding Local}"
+                   TextColor="Black"/>
+
+            <Label Text="Custo por Participante:" FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="{Binding CustoPorParticipante, StringFormat='R$ {0:F2}'}"
+                   TextColor="Black"/>
+
+            <Label Text="Custo Total:" FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="{Binding CustoTotal, StringFormat='R$ {0:F2}'}"
+                   TextColor="Black"/>
+                </VerticalStackLayout>
+
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

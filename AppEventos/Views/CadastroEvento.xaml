@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEventos.Views.CadastroEventoPage"
+             Title="Registro de Evento"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Frame CornerRadius="20" Padding="20" BackgroundColor="White" HasShadow="True">
+
+                <VerticalStackLayout Spacing="15">
+
+                    <Label Text="Nome do evento" FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Entry Placeholder="Nome do evento"
+                           Text="{Binding Nome}"
+                           TextColor="Black"
+                           BackgroundColor="#EFEFEF"
+                           HeightRequest="45"/>
+
+                   
+                    <Label Text="Data de inicio" FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <DatePicker Date="{Binding DataInicio}"
+                                TextColor="Black"
+                                BackgroundColor="#EFEFEF"
+                                HeightRequest="45"/>
+
+                    <Label Text="Data de encerramento" FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <DatePicker Date="{Binding DataTermino}"
+                                TextColor="Black"
+                                BackgroundColor="#EFEFEF"
+                                HeightRequest="45"/>
+                    
+
+                    <Label Text="Numero de participantes" FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Entry Placeholder="0"
+                           Keyboard="Numeric"
+                           Text="{Binding Participantes}"
+                           TextColor="Black"
+                           BackgroundColor="#EFEFEF"
+                           HeightRequest="45"/>
+
+                    <Label Text="Custo por participante" FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Entry Placeholder="$ 0.00"
+       Keyboard="Numeric"
+       Text="{Binding CustoPorParticipante}"
+       TextColor="Black"
+       BackgroundColor="#EFEFEF"
+       HeightRequest="45"/>
+
+                    <Label Text="Local do evento" FontAttributes="Bold"
+                           TextColor="Black"/>
+                    <Entry Placeholder="Local do evento"
+                           Text="{Binding Local}"
+                           TextColor="Black"
+                           BackgroundColor="#EFEFEF"
+                           HeightRequest="45"/>
+
+                    
+
+                    <Button Text="Registrar"
+                            BackgroundColor="#6C3FCC"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            Clicked="OnCadastrarEventoClicked"/>
+                </VerticalStackLayout>
+
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

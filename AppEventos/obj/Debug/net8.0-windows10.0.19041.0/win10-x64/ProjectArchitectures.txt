@@ -1,0 +1,1 @@
+C:\Users\guilu\source\repos\AppEventos\AppEventos\AppEventos.csproj;x64
